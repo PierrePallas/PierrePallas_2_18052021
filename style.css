@@ -1,0 +1,62 @@
+:root {
+  --bleu: #0065fc;
+  --bleu_clair: #deebff;
+  --gris: #f2f2f2;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+header img {
+  position: absolute;
+  top: 4px;
+  left: 40px;
+  width: 100px;
+  margin-top: 50px;
+}
+
+header a {
+  margin-right: 60px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  transition: 0.3s linear;
+}
+
+#border_1 {
+  border-top: 2px solid transparent;
+  padding-top: 70px;
+}
+
+#border_2 {
+  border-top: 2px solid transparent;
+  padding-top: 70px;
+}
+
+#border_1:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+
+#border_2:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+
+header a:visited {
+  text-decoration: none;
+  color: black;
+}

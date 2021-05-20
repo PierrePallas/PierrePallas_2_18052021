@@ -12,12 +12,21 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* HEADER */
+
 header {
   min-height: 10vh;
+  margin-bottom: 40px;
+}
+
+.flexbox_header {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-bottom: 40px;
 }
 
 header img {
@@ -59,4 +68,116 @@ header a {
 header a:visited {
   text-decoration: none;
   color: black;
+}
+
+/* Première Section */
+
+/* Zone Recherche */
+h2 {
+  font-size: 1.2rem;
+  margin-left: 40px;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.rechercher {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+#formulaire {
+  display: flex;
+}
+
+.fa-map-marker-alt {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+#zone_recherche {
+  border: 1px solid #f2f2f2;
+  padding: 15px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+
+#zone_recherche:focus {
+  outline: none;
+}
+
+.button {
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  background: #0065fc;
+  color: #f2f2f2;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 15px;
+  border: 1px #f2f2f2;
+  transition: 0.4s;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(1.1);
+}
+
+/* Filtres */
+
+.form_filtres {
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  margin-right: 550px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label {
+  background: var(--bleu);
+  color: #f2f2f2;
+}
+
+input[type="checkbox"]:hover + label {
+  background: var(--bleu);
+  content: icon f53a;
+}
+
+.form_filtres label {
+  cursor: pointer;
+  border: 2px solid var(--gris);
+  padding: 10px;
+  border-left: transparent;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.form_filtres i {
+  border: 2px solid var(--gris);
+  border-radius: 50px;
+  padding: 15px;
+  background: var(--bleu_clair);
+  color: var(--bleu);
+}
+
+input[type="checkbox"]#option1:checked + label {
 }

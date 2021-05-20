@@ -29,13 +29,13 @@
 
     <section class="section_trouver">
       <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-      En plein centre ville ou en pleine nature
+      <h3>En plein centre ville ou en pleine nature</h3>
 
       <div class="rechercher">
-        <form action="#">
-          <i class="fas fa-map-marker-alt"></i>
+        <form id="formulaire" action="#">
+          <i id="icon_form" class="fas fa-map-marker-alt"></i>
           <div>
-            <input type="text" id="zone_recherche" value="Marseille, France" />
+            <input type="search" id="zone_recherche" placeholder="Marseille, France"/>
             <label for="zone_recherche"></label>
           </div>
           <div>
@@ -46,27 +46,27 @@
 
       <div class="form_filtres">
         <div>
-          <p>Filtres</p>
+          <p><strong>Filtres</strong></p>
         </div>
         <div class="checkbox_filtres">
-          <input type="checkbox" id="option1" />
-          <label for="option1">Économique</label>
           <i class="fas fa-money-bill-wave"></i>
+          <input type="checkbox" id="option1" />
+          <label for="option1">Économique</label> 
         </div>
         <div class="checkbox_filtres">
+          <i class="fas fa-child"></i>
           <input type="checkbox" id="option2" />
           <label for="option2">Familial</label>
-          <i class="fas fa-child"></i>
         </div>
         <div class="checkbox_filtres">
+          <i class="fas fa-heart"></i>
           <input type="checkbox" id="option3" />
           <label for="option3">Romantique</label>
-          <i class="fas fa-heart"></i>
         </div>
         <div class="checkbox_filtres">
+          <i class="fas fa-dog"></i>
           <input type="checkbox" id="option4" />
           <label for="option4">Animaux autorisés</label>
-          <i class="fas fa-dog"></i>
         </div>
       </div>
       <i class="fas fa-info-circle"></i>

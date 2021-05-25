@@ -22,13 +22,11 @@ header {
   min-height: 10vh;
   margin-bottom: 40px;
 }
-
 .flexbox_header {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-
 header img {
   position: absolute;
   top: 4px;
@@ -36,7 +34,6 @@ header img {
   width: 100px;
   margin-top: 50px;
 }
-
 header a {
   margin-right: 60px;
   text-decoration: none;
@@ -44,27 +41,22 @@ header a {
   font-size: 1rem;
   transition: 0.3s linear;
 }
-
 #border_1 {
   border-top: 2px solid transparent;
   padding-top: 70px;
 }
-
 #border_2 {
   border-top: 2px solid transparent;
   padding-top: 70px;
 }
-
 #border_1:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
-
 #border_2:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
-
 header a:visited {
   text-decoration: none;
   color: black;
@@ -189,4 +181,212 @@ input[type="checkbox"]:hover + label {
   margin-left: 40px;
   margin-bottom: 10px;
   font-size: 1.1rem;
+}
+
+/* Hébergements */
+
+.hébergements {
+  height: 70vh;
+  margin: 20px 20px 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_marseille {
+  background: var(--gris);
+  width: 130vh;
+  padding-top: 20px;
+  border-radius: 15px;
+}
+
+.img_marseille {
+  margin: 10px 20px 10px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 7px 8px grey;
+  padding: 2px;
+  transition: 0.2s;
+}
+
+.img_marseille:hover {
+  transform: scale(1.02);
+}
+
+.grid_img_marseille {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.titre_lieu {
+  font-weight: bolder;
+}
+
+.img_marseille img {
+  width: 100%;
+  height: 115px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.hébergements a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.stars {
+  margin-top: 5px;
+  color: var(--bleu);
+}
+
+#no_stars {
+  color: var(--gris);
+}
+
+button {
+  border: transparent;
+  margin-top: 20px;
+  margin-left: 40px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  color: var(--bleu);
+}
+
+/* Les Plus Populaires */
+
+.container_populaire {
+  background: var(--gris);
+  width: 55vh;
+  margin-right: 10px;
+  padding-top: 20px;
+  border-radius: 15px;
+}
+
+.titre_pop {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.flexbox_img_populaire {
+  margin: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 7px 8px grey;
+  padding: 2px;
+  transition: 0.2s;
+}
+
+.container_populaire img {
+  width: 100%;
+  height: 80px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+/* Activités */
+
+.activités {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#h2activités {
+  margin: 30px;
+}
+
+.activités img {
+  width: 10vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 20px 30px 10px 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "grid1 grid2 grid4 grid5"
+    "grid11 grid3 grid44 grid6";
+}
+
+.grid1 {
+  grid-area: grid1;
+}
+.grid2 {
+  grid-area: grid2;
+}
+.grid3 {
+  grid-area: grid3;
+}
+.grid4 {
+  grid-area: grid4;
+}
+.grid5 {
+  grid-area: grid5;
+}
+.grid6 {
+  grid-area: grid6;
+}
+
+.img_activités {
+  width: 20vh;
+  border: 2px solid black;
+}
+
+/* Footer */
+
+.grid_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "grid_ap grid_h grid_a"
+    "grid_f grid_ch grid_ai"
+    "grid_cvg grid_so grid_co"
+    "grid_conf . .";
+}
+
+.grid_ap {
+  grid-area: grid_ap;
+}
+.grid_f {
+  grid-area: grid_f;
+}
+.grid_cvg {
+  grid-area: grid_cvg;
+}
+.grid_h {
+  grid-area: grid_h;
+}
+.grid_ch {
+  grid-area: grid_ch;
+}
+.grid_so {
+  grid-area: grid_so;
+}
+.grid_conf {
+  grid-area: grid_conf;
+}
+.grid_a {
+  grid-area: grid_a;
+}
+.grid_ai {
+  grid-area: grid_ai;
+}
+.grid_co {
+  grid-area: grid_co;
 }

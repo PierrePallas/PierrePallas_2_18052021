@@ -338,7 +338,17 @@ p {
   margin: 30px;
 }
 
-.activités img {
+.flex1 img,
+.flex3 img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
+
+.flex2 img,
+.flex4 img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
@@ -355,7 +365,18 @@ p {
   transition: 0.2s;
 }
 
-.img_activités:hover {
+.img_activités_left {
+  border: 2px solid var(--gris);
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 7px 8px grey;
+  padding: 2px;
+  transition: 0.2s;
+  height: 400px;
+}
+
+.img_activités:hover,
+.img_activités_left:hover {
   transform: scale(1.02);
 }
 
@@ -402,4 +423,37 @@ p {
 footer {
   background: var(--gris);
   margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+
+.flex_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.flex_ap {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_footer a {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: black;
+}
+
+.flex_footer a:hover {
+  color: var(--bleu);
+  text-decoration: underline;
+}
+
+.flex_footer h3 {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 20px;
 }

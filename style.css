@@ -136,6 +136,7 @@ h3 {
   margin-right: 550px;
   display: flex;
   justify-content: space-around;
+  width: 140vh;
 }
 
 p {
@@ -264,8 +265,8 @@ button:hover {
 
 .container_populaire {
   background: var(--gris);
-  width: 55vh;
-  margin-right: 10px;
+  width: 50vh;
+  margin-right: 20px;
   padding-top: 20px;
   border-radius: 15px;
 }
@@ -456,4 +457,34 @@ footer {
   font-weight: bold;
   font-size: 1em;
   margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1810px) {
+  .container_marseille {
+    width: 110vh;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .grid_img_marseille {
+    grid-template-columns: 1fr;
+  }
+  .hébergements {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .container_marseille {
+    width: 500px;
+  }
+
+  .container_populaire {
+  }
+
+  .img_marseille,
+  .flexbox_img_populaire {
+    height: 100px;
+  }
 }

@@ -561,6 +561,7 @@ footer {
   .container_populaire,
   .titre_pop {
     margin-left: 0px;
+    width: 100%;
   }
 
   #h2hebergements {
@@ -570,6 +571,11 @@ footer {
   .grid_img_marseille {
     grid-template-columns: 1fr;
     margin-left: 0px;
+    width: 100%;
+  }
+
+  .img_marseille {
+    width: 100%;
   }
 
   header {

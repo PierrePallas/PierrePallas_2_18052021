@@ -18,22 +18,24 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header>
-      <img
-        src="./Projet2_Reservia/images/logo/Reservia@3x.png"
-        alt="Logo_Reservia"
-      />
-      <div class="flexbox_header">
-        <a id="border_1" href="#h2hébergements">Hébergements</a>
-        <a id="border_2" href="#h2activités">Activités</a>
+      <div class="grid-header">
+        <img
+          id="Logo"
+          src="./Projet2_Reservia/images/logo/Reservia@3x.png"
+          alt="Logo Reservia"
+        />
+        <a href="#h2hébergements">Hébergements</a>
+        <a href="#h2activités">Activités</a>
         <a href="inscription.html"><strong>S'inscrire</strong></a>
       </div>
     </header>
 
-    <section class="section_trouver">
+    <!-- TROUVER VOTRE HEBERGEMENT -->
+    <section class="section-trouver">
       <h2>Trouver votre hébergement pour des vacances de rêve</h2>
       <h3>En plein centre ville ou en pleine nature</h3>
-
       <div class="rechercher">
         <form id="formulaire" action="#">
           <i id="icon_form" class="fas fa-map-marker-alt"></i>
@@ -48,172 +50,196 @@
           <div>
             <input type="submit" class="button" value="Rechercher" />
           </div>
+          <div class="button2">
+            <i class="fas fa-search"></i>
+          </div>
         </form>
       </div>
 
+      <!-- FILTRES -->
       <div class="form_filtres">
         <div>
           <p><strong>Filtres</strong></p>
         </div>
-        <div class="checkbox_filtres">
-          <input type="checkbox" id="option1" />
-          <label for="option1"
-            ><i class="fas fa-money-bill-wave"></i
-            ><strong>Économique</strong></label
-          >
+        <div class="EcoetFami">
+          <div class="checkbox_filtres">
+            <input type="checkbox" id="option1" />
+            <label for="option1"
+              ><i class="fas fa-money-bill-wave"></i
+              ><strong>Économique</strong></label
+            >
+          </div>
+          <div class="checkbox_filtres">
+            <input type="checkbox" id="option2" />
+            <label for="option2"
+              ><i class="fas fa-child"></i><strong>Familial</strong></label
+            >
+          </div>
         </div>
-        <div class="checkbox_filtres">
-          <input type="checkbox" id="option2" />
-          <label for="option2"
-            ><i class="fas fa-child"></i><strong>Familial</strong></label
-          >
-        </div>
-        <div class="checkbox_filtres">
-          <input type="checkbox" id="option3" />
-          <label for="option3"
-            ><i class="fas fa-heart"></i><strong>Romantique</strong></label
-          >
-        </div>
-        <div class="checkbox_filtres">
-          <input type="checkbox" id="option4" />
-          <label for="option4"
-            ><i class="fas fa-dog"></i><strong>Animaux autorisés</strong></label
-          >
+        <div class="RometAni">
+          <div class="checkbox_filtres">
+            <input type="checkbox" id="option3" />
+            <label for="option3"
+              ><i class="fas fa-heart"></i><strong>Romantique</strong></label
+            >
+          </div>
+          <div class="checkbox_filtres">
+            <input type="checkbox" id="option4" />
+            <label for="option4"
+              ><i class="fas fa-dog"></i
+              ><strong>Animaux autorisés</strong></label
+            >
+          </div>
         </div>
       </div>
-      <i id="icon_fin" class="fas fa-info-circle"></i>
+      <i id="icon_fin" class="fas fa-info"></i>
       Plus de 500 logements sont disponibles dans cette ville
     </section>
 
-    <section class="hébergements">
-      <div class="container_marseille">
-        <h2 id="h2hébergements">Hébergements à Marseille</h2>
+    <!-- HEBERGEMENTS A MARSEILLE -->
+    <div class="HebetPop">
+      <section id="hebergements">
+        <div class="container_marseille">
+          <h2 id="h2hebergements">Hébergements à Marseille</h2>
 
-        <div class="grid_img_marseille">
-          <div class="img_marseille">
-            <a href="cannebiere.html">
-              <img
-                src="./Projet2_Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Auberge_de_la_Cannebière"
-              />
-              <div class="titre_lieu">Auberge de la Cannebière</div>
-              Nuit à partir de <strong>25</strong
-              ><i class="fas fa-euro-sign"></i>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i id="no_stars" class="fas fa-star"></i>
-              </div>
-            </a>
-          </div>
-          <div class="img_marseille">
-            <a href="port.html">
-              <img
-                src="./Projet2_Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                alt="Hôtel_du_port"
-              />
-              <div class="titre_lieu">Hôtel du port</div>
-              Nuit à partir de 52<i class="fas fa-euro-sign"></i>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
-              </div>
-            </a>
-          </div>
-          <div class="img_marseille">
-            <a href="lesmouettes.html">
-              <img
-                src="./Projet2_Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                alt="Hôtel Les mouettes"
-              />
-              <div class="titre_lieu">Hôtel Les mouettes</div>
-              Nuit à partir de 76<i class="fas fa-euro-sign"></i>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i id="no_stars" class="fas fa-star"></i>
-              </div>
-            </a>
-          </div>
-          <div class="img_marseille">
-            <a href="delamer.html">
-              <img
-                src="./Projet2_Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                alt="Hôtel_de_la_mer"
-              />
-              <div class="titre_lieu">Hôtel de la mer</div>
-              Nuit à partir de 46<i class="fas fa-euro-sign"></i>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i
-                ><i id="no_stars" class="fas fa-star"></i
-                ><i id="no_stars" class="fas fa-star"></i>
-              </div>
-            </a>
-          </div>
-          <div class="img_marseille">
-            <a href="lepanier.html">
-              <img
-                src="./Projet2_Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                alt="Auberge_Le_Panier"
-              />
-              <div class="titre_lieu">Auberge Le Panier</div>
-              Nuit à partir de <strong>23</strong
-              ><i class="fas fa-euro-sign"></i>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i id="no_stars" class="fas fa-star"></i>
-              </div>
-            </a>
-          </div>
-          <div class="img_marseille">
-            <a href="chezamina.html">
-              <img
-                src="/Projet2_Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                alt="Hôtel_chez_Amina"
-              />
-              <div class="titre_lieu">Hôtel chez Amina</div>
-              Nuit à partir de 96<i class="fas fa-euro-sign"></i>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
-              </div>
-            </a>
-          </div>
-        </div>
-        <button>Afficher plus</button>
-      </div>
-
-      <div class="container_populaire">
-        <div class="titre_pop">
-          <h2>Les plus populaires</h2>
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <div class="flexbox_populaire">
-          <div class="flexbox_img_populaire">
-            <a href="lesoleildumatin.html">
-              <div class="flex_pop">
+          <div class="grid_img_marseille">
+            <div class="img_marseille">
+              <a href="cannebiere.html">
                 <img
-                  src="/Projet2_Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  alt="Hôtel_Le_Soleil_du_matin"
+                  src="./Projet2_Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  alt="Auberge_de_la_Cannebière"
                 />
-                <div class="flex_text">
-                  <div class="titre_lieu">
-                    Hôtel Le Soleil du matin
-                    <p>Nuit à partir de 128<i class="fas fa-euro-sign"></i></p>
+                <div class="text-heb">
+                  <div class="titre_lieu">Auberge de la Cannebière</div>
+                  Nuit à partir de <strong>25</strong
+                  ><i class="fas fa-euro-sign"></i>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i id="no_stars" class="fas fa-star"></i>
                   </div>
+                </div>
+              </a>
+            </div>
+            <div class="img_marseille">
+              <a href="port.html">
+                <img
+                  src="./Projet2_Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                  alt="Hôtel_du_port"
+                />
+                <div class="text-heb">
+                  <div class="titre_lieu">Hôtel du port</div>
+                  Nuit à partir de 52<i class="fas fa-euro-sign"></i>
                   <div class="stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i
                     ><i class="fas fa-star"></i><i class="fas fa-star"></i
                     ><i class="fas fa-star"></i>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="img_marseille">
+              <a href="lesmouettes.html">
+                <img
+                  src="./Projet2_Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  alt="Hôtel Les mouettes"
+                />
+                <div class="text-heb">
+                  <div class="titre_lieu">Hôtel Les mouettes</div>
+                  Nuit à partir de 76<i class="fas fa-euro-sign"></i>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i id="no_stars" class="fas fa-star"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="img_marseille">
+              <a href="delamer.html">
+                <img
+                  src="./Projet2_Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  alt="Hôtel_de_la_mer"
+                />
+                <div class="text-heb">
+                  <div class="titre_lieu">Hôtel de la mer</div>
+                  Nuit à partir de 46<i class="fas fa-euro-sign"></i>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i
+                    ><i id="no_stars" class="fas fa-star"></i
+                    ><i id="no_stars" class="fas fa-star"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="img_marseille">
+              <a href="lepanier.html">
+                <img
+                  src="./Projet2_Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                  alt="Auberge_Le_Panier"
+                />
+                <div class="text-heb">
+                  <div class="titre_lieu">Auberge Le Panier</div>
+                  Nuit à partir de <strong>23</strong
+                  ><i class="fas fa-euro-sign"></i>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i id="no_stars" class="fas fa-star"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="img_marseille">
+              <a href="chezamina.html">
+                <img
+                  src="/Projet2_Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                  alt="Hôtel_chez_Amina"
+                />
+                <div class="text-heb">
+                  <div class="titre_lieu">Hôtel chez Amina</div>
+                  Nuit à partir de 96<i class="fas fa-euro-sign"></i>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
+          <button>Afficher plus</button>
+        </div>
+      </section>
+      <!-- LES PLUS POPULAIRES -->
+
+      <section class="populaire">
+        <div class="titre_pop">
+          <h2>Les plus populaires</h2>
+          <i id="icon_pop" class="fas fa-chart-line"></i>
+        </div>
+
+        <div class="container_populaire">
+          <a href="lesoleildumatin.html">
+            <div class="flex_pop">
+              <img
+                src="/Projet2_Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel_Le_Soleil_du_matin"
+              />
+              <div class="flex_text">
+                <div class="titre_lieu">
+                  Hôtel Le Soleil du matin
+                  <p>Nuit à partir de 128<i class="fas fa-euro-sign"></i></p>
+                </div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
 
           <div class="flexbox_img_populaire">
             <a href="aucoeurdeleau.html">
@@ -259,8 +285,8 @@
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Activités à Marseille -->
     <section class="activités">
@@ -341,6 +367,7 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <div class="flex_footer">
         <div class="flex_ap">

@@ -664,6 +664,10 @@ footer {
     margin-top: 10px;
   }
 
+  #Animaux {
+    margin-top: 12px;
+  }
+
   #h2activités {
     margin-left: 0px;
   }
@@ -711,5 +715,30 @@ footer {
 
   footer {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #formulaire {
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+  }
+
+  .checkbox_filtres {
+    margin: 10px 10px 0px 5px;
+  }
+
+  .section-trouver {
+    margin-left: 20px;
+  }
+
+  .EcoetFami {
+    font-size: 0.9rem;
+    justify-content: space-between;
+  }
+
+  .RometAni {
+    font-size: 0.9rem;
   }
 }

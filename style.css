@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
 :root {
   --bleu: #0065fc;
   --bleu_clair: #deebff;
   --gris: #f2f2f2;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
 
 * {
   margin: 0;
@@ -280,7 +280,12 @@ button:hover {
   color: var(--bleu);
 }
 
-#no_stars {
+#no_stars,
+#no_stars2,
+#no_stars3,
+#no_stars4,
+#no_stars5,
+#no_stars6 {
   color: var(--gris);
 }
 
